@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./style.css"/>
+  <title>Bundle Builder</title>
+</head>
+<body>
+  <div class="container">
+    <div class="promo-banner">Buy 3 and Save 30%</div>
+    <main class="bundle-builder">
+      <!-- Product Grid -->
+      <section class="product-grid">
+        <!-- JS will inject cards here -->
+      </section>
+      <!-- Bundle Sidebar -->
+      <aside class="bundle-sidebar">
+        <h2>Create a Bundle</h2>
+        <h3>Add at <strong>least 3</strong> products <strong>Save 30%</strong></h3>
+        <div class="progress-bar-row">
+          <div class="progress-bar-bg">
+            <div class="progress-bar-inner"></div>
+          </div>
+          <span class="progress-label"><span id="selected-count">0</span>/3</span>
+        </div>
+        <div class="selected-list"></div>
+        <div class="discount-row" id="discount-row" style="display:none;">
+          <span>Discount</span>
+          <span id="discount-amount">-$0.00 (30%)</span>
+        </div>
+        <div class="subtotal-row">
+          <span>Subtotal</span>
+          <span id="subtotal-val">$0.00</span>
+        </div>
+        <button id="bundle-cta" class="bundle-btn dark" disabled>Add Bundle to Cart <span class="icon">&rarr;</span></button>
+      </aside>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

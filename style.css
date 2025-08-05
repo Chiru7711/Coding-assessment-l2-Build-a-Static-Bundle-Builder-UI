@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,700");
+
+html, body {
+  margin: 0; padding: 0;
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 12px;
+}
+
+.promo-banner {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f8f8;
+}
+
+/* --- Main Layout --- */
+.bundle-builder {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 1100px;
+  min-height: auto;
+}
+
+/* --- Product Grid --- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  flex: 2;
+}
+
+.product-card {
+  background: #fff;
+  box-shadow: 0 2px 12px 0 #e6e2f3;
+  display: flex; flex-direction: column; align-items: center;
+  max-width: 316.66px;
+  width: 100%;
+}
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 14px;
+  background: #f1e8fa;
+}
+.product-title {
+  font-size: 1.04em;
+  font-weight: 500;
+  margin-bottom: 6px;
+  text-align: left;
+  width: 100%;
+}
+.product-price {
+  color: #5b3a86;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: left;
+  width: 100%;
+}
+
+/* --- Bundle Sidebar --- */
+.bundle-sidebar {
+  min-width: 310px; width: 340px;
+  background: #fff;
+  box-shadow: 0 2px 12px 0 #ccd1f0;
+  padding: 32px 20px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.bundle-sidebar h2 {
+  font-weight: 700;
+  font-size: 1.16em;
+  margin-bottom: 4px;
+  padding-bottom: 0;
+}
+.bundle-sidebar h3 {
+  font-weight: 400;
+  font-size: 0.9em;
+  margin-bottom: 12px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.bundle-sidebar h3 strong {
+  font-weight: 700;
+}
+.progress-bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.progress-bar-bg {
+  background: #ede8f7;
+  width: 100%; height: 8px;
+  overflow: hidden;
+}
+.progress-bar-inner {
+  background: #7950cc;
+  height: 100%; width: 0%;
+  transition: width 0.35s;
+}
+.progress-label {
+  color: #666666; font-size: 1em;
+}
+.selected-list {
+  min-height: 40px;
+  max-height: 300px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.selected-list::-webkit-scrollbar {
+  width: 6px;
+}
+.selected-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.selected-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+}
+.selected-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+.selected-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 0;
+}
+.item-title {
+  font-size: 0.95em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.item-price {
+  font-size: 0.9em;
+  color: #5b3a86;
+  font-weight: 600;
+}
+.item-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.qty-btn {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+.qty-btn:hover {
+  background: #e0e0e0;
+}
+.quantity {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.selected-item span {
+  font-size: 0.97em;
+}
+.selected-item-remove {
+  background: none; border: none; cursor: pointer; padding: 4px;
+  flex-shrink: 0;
+}
+.selected-item-remove img {
+  display: block;
+}
+.discount-row { 
+  display: flex; 
+  justify-content: space-between; 
+  font-size: 0.98em; 
+  color: #009c86; 
+  min-height: 18px; 
+  font-weight: 500;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 0;
+  margin: 8px 0;
+}
+.subtotal-row { display: flex; justify-content: space-between; font-weight: 600; font-size: 1.12em; }
+
+/* ----------------------
+   BUTTONS (From Figma)
+------------------------- */
+.bundle-btn {
+  width: 100%;
+  max-width: 316.66px;
+  height: 55px;
+  padding: 16px;
+  font-size: 1.13em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #111111;
+  background: #ffffff;
+  color: #111111;
+  cursor: pointer;
+  transition: background 0.17s, color 0.17s;
+}
+.bundle-btn:hover {
+  background: #111111;
+  color: #ffffff;
+}
+.bundle-btn.dark {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #111111;
+}
+.bundle-btn.dark:hover {
+  background: #111111;
+  color: #ffffff;
+}
+.bundle-btn.grey {
+  background: #444444;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+.bundle-btn.grey:hover {
+  background: #444444;
+  color: #ffffff;
+}
+.bundle-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+.bundle-btn .icon {
+  font-size: 1.25em;
+  line-height: 1;
+  margin-left: 10px;
+  display: inline-block;
+}
+.bundle-btn .icon.check {
+  font-size: 1.18em;
+  color: #ffffff;
+  transition: color 0.19s;
+}
+.bundle-btn .icon.arrow {
+  font-size: 1.19em;
+}
+/* Accessibility */
+.bundle-btn:focus, #bundle-cta:focus { outline: 2px solid #7246c6; }
+
+/* Card Button placement & demo */
+.product-card .bundle-btn {
+  margin-top: auto;
+}
+
+/* Responsive -------- */
+@media (max-width: 1000px) {
+  .bundle-builder { flex-direction: column; gap: 20px; }
+  .bundle-sidebar { width: 100%; min-width: 0; margin: 0 auto; position: static; padding: 25px 20px 18px; }
+  .product-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .container { padding: 20px 16px; }
+}
+@media (max-width: 768px) {
+  .product-grid { grid-template-columns: 1fr; gap: 16px; }
+  .bundle-sidebar { padding: 20px 16px; }
+  .promo-banner { font-size: 1.2em; padding: 12px; }
+}
+@media (max-width: 480px) {
+  .container { padding: 15px 12px; }
+  .bundle-sidebar { padding: 16px 12px; }
+  .product-card { padding: 20px 12px 12px; }
+  .promo-banner { font-size: 1.1em; padding: 10px; }
+}

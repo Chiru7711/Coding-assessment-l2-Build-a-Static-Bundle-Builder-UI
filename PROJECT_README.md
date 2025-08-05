@@ -4,7 +4,7 @@ A responsive bundle builder interface that allows users to create product bundle
 
 ## 🚀 Live Demo
 
-[View Live Project](https://your-vercel-deployment-url.vercel.app)
+[View Live Project](https://static-bundle-builder-ui.vercel.app/)
 
 ## 📋 Features
 
